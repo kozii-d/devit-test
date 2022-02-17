@@ -1,0 +1,16 @@
+Linux
+
+1. ls -d /var/www/html/*/
+2. cat *.txt > all.txt
+3. grep -v '^[[:space:]]*$' /var/www/html/logs/error.txt
+4. ls /var/www/html/image/*.jpg
+5. > /var/www/html/logs/access.txt
+6. find /var/www/html/image -size +2M
+
+GIT
+
+Сначала я в директиве с проектом инициализирую новый репозиторий командой git init,
+затем добавлю все файлы в отслеживаемую зону git add ./
+После сделаю коммит git commit -m "commit msg"
+Затем свяжу локальный репозиторий с удалённым git remote add origin git@example.com:example/test.git
+И после этого запушу всё в ветку master удалённого репозитория git push -u origin master

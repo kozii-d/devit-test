@@ -1,0 +1,115 @@
+html {
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+}
+
+*,
+*::after,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.nav__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    border: 1px solid black;
+}
+
+.content__inner {
+    display: flex;
+    height: 500px;
+}
+
+.content__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.content__sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    border: 1px solid black;
+}
+
+/* Анимации */
+@keyframes moving {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes ch-color {
+    from {
+        background-color: red;
+    }
+
+    25% {
+        background-color: orange;
+    }
+
+    75% {
+        background-color: green;
+    }
+
+    to {
+        background-color: red;
+    }
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    animation-name: moving, ch-color;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
